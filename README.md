@@ -1,6 +1,6 @@
 # HMM Viterbi PoS-Tagging
 
-PoS-Tagging using Hidden Markov Model (HMM) with Viterbi Algorithm.
+PoS-Tagging using Hidden Markov Model (HMM) with Viterbi Algorithm: [Live demo](https://pos-tagging.streamlit.app/).
 
 ## Dependencies
 
