@@ -65,9 +65,9 @@ def prettify(tagged_text: list[tuple[str, str]], tagset):
 @st.cache_resource
 def get_cached_matrices(language):
     if language == "Portuguese":
-        train_filepath = os.path.join("..", "data", "macmorpho", "macmorpho-train.txt")
+        train_filepath = os.path.join("data", "macmorpho", "macmorpho-train.txt")
     elif language == "English":
-        train_filepath = os.path.join("..", "data", "WSJ", "WSJ_02-21.txt")
+        train_filepath = os.path.join("data", "WSJ", "WSJ_02-21.txt")
     else:
         raise ValueError("Language not defined.")
 
