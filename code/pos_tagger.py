@@ -1,9 +1,9 @@
 import numpy as np
 from tqdm import tqdm
-
+import re
 
 def preprocess_to_infer(text, vocab_idx, lower_vocab):
-    text = text.strip().split(" ")
+    text = re.sub(' +', ' ', text.strip()).split(" ")
 
     if len(text) == 0:
         return [], []
