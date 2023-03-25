@@ -6,9 +6,9 @@ def preprocess_to_infer(text, vocab_idx, lower_vocab):
     text = text.strip().split(" ")
 
     if len(text) == 0:
-        return ""
+        return [], []
 
-    input_text = []
+    input_text = [] # to input in the inference - text is the original
     for token in text:
         if token in vocab_idx:
             input_text.append(token)

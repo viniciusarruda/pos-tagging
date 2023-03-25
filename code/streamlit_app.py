@@ -99,7 +99,7 @@ def main():
     text = st.text_area(label="Input text")
     clicked = st.button("PoS tag!")
 
-    if clicked:
+    if clicked and len(text.strip()) > 0:
         text, input_text = preprocess_to_infer(text, vocab_idx, lower_vocab)
         Y_hat = inference(
             input_text, transition_matrix, emission_matrix, tagset, vocab_idx
