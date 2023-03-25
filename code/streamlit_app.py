@@ -107,6 +107,9 @@ def main():
 
         st.write(prettify(zip(text, Y_hat), tagset), unsafe_allow_html=True)
 
+    st.markdown("---")
+    st.write("Source code [here](https://github.com/viniciusarruda/pos-tagging).")
+
 
 if __name__ == "__main__":
     main()
